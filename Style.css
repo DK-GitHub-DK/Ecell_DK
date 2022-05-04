@@ -11,16 +11,17 @@
   height: 100vh;
 }
 .nav-bar {
-  background-color: #0a0909;
+  /* background-color: #0a0909; */
   display: flex;
   align-items: center;
   height: 60px;
 }
+
 #logo {
   font-weight: bold;
   color: #069560;
 }
-.nav-items a {
+a {
   text-decoration: none;
   color: #eff0ed;
 }
@@ -113,6 +114,17 @@
   height: 60px;
   border-radius: 10px;
 }
-.CTA .button:hover {
+.CTA .button a:hover {
   color: white;
+}
+
+#github {
+  position: absolute;
+  padding-right: 20px;
+  right: 0;
+  z-index: 2;
+}
+
+#github:hover {
+  color: #069560;
 }
