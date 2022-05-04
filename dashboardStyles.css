@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  display: flex;
+}
+.navbar {
+  height: 100vh;
+  width: 100px;
+  background-color: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  justify-content: space-between;
+}
+.navbar .image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+  background-color: white;
+  overflow: hidden;
+}
+.navbar .image img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.navbar .widgets {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+  transform: translateY(-200px);
+}
+.navbar .widgets a {
+  color: rgba(255, 255, 255, 0.726);
+}
+.navbar .widgets a:hover {
+  color: white;
+}
+.navbar a {
+  color: rgba(255, 255, 255, 0.726);
+}
+.navbar a:hover {
+  color: white;
+}
+.main-content-header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px 0 20px;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px rgba(0, 0, 0, 0.246) solid;
+}
+.header .Dashboard-text {
+  font-size: 24px;
+  font-weight: bold;
+}
+.header .icons {
+  width: 15%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .icons img {
+  width: 25px;
+  height: 25px;
+}
+.main-content {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  background-color: #ecedef;
+}
+
+.card-budget {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-slider-budget {
+  width: 100%;
+  height: 38%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+.card-slider {
+  width: 70%;
+  height: 100%;
+  display: flex;
+}
+.card {
+  height: 100%;
+  width: 85%;
+  background-image: linear-gradient(to top right, #0c3380, #fe5e37);
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .bank-details {
+  display: flex;
+  justify-content: space-between;
+}
+.card .bank-details p {
+  font-size: 35px;
+  color: rgba(255, 240, 240, 0.863);
+}
+.card .money-details {
+  display: flex;
+  font-size: 20px;
+  color: rgba(255, 240, 240, 0.863);
+}
+.card .money-details .label {
+  text-align: right;
+  margin-right: 8px;
+}
+.card .money-details .daily-budget {
+  height: 100px;
+  width: 100%;
+  text-align: right;
+}
+.card .money-details .daily-budget p {
+  padding-right: 5pxç;
+}
+.slider {
+  width: 10%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider .circle {
+  width: 15px;
+  height: 15px;
+  background-color: #c4c4c4;
+  border-radius: 100%;
+  margin: 10px 0 10px 0;
+}
+
+.slider .plus {
+  font-size: 50px;
+}
+
+.budget {
+  width: 100%;
+  height: 60%;
+  background-color: firebrick;
+}
+
+.calender-todo {
+  width: 100%;
+  height: 100%;
+  background-color: turquoise;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.calender {
+  width: 50%;
+  height: 38%;
+  background-color: violet;
+}
+
+.todo {
+  width: 100%;
+  height: 60%;
+  background-color: firebrick;
+}
+
+a {
+  text-decoration: none;
+}
