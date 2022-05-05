@@ -42,7 +42,7 @@
   color: rgba(255, 255, 255, 0.726);
 }
 .navbar .widgets a:hover {
-  color: white;
+  color: #fe5e37;
 }
 .navbar a {
   color: rgba(255, 255, 255, 0.726);
@@ -113,6 +113,7 @@
   height: 100%;
   width: 85%;
   background-image: linear-gradient(to top right, #0c3380, #fe5e37);
+  /* background-image: linear-gradient(to right, #333333, #000000); */
   border-radius: 30px;
   padding: 20px;
   display: flex;
@@ -163,36 +164,154 @@
 
 .slider .plus {
   font-size: 50px;
+  cursor: pointer;
 }
 
 .budget {
   width: 100%;
   height: 60%;
-  background-color: firebrick;
 }
 
 .calender-todo {
   width: 100%;
   height: 100%;
-  background-color: turquoise;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   padding: 10px;
 }
 
+a {
+  text-decoration: none;
+}
+
+.budget table {
+  background-color: white;
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.239);
+}
+.budget table thead tr {
+  background-color: #0a0a0a;
+  color: white;
+  text-align: left;
+}
+.budget table th,
+.budget table td {
+  padding: 12px 15px;
+}
+.budget table tbody tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+.budget table tbody tr:nth-of-type(even) {
+  background-color: whitesmoke;
+}
+.budget table tbody tr .minus {
+  color: #dc3545;
+  font-weight: bold;
+}
+.budget table tbody tr .plus {
+  color: #28a745;
+  font-weight: bold;
+}
+
 .calender {
   width: 50%;
   height: 38%;
-  background-color: violet;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.calender .heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calender .heading p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0 0 10px;
+}
+.calender .heading select {
+  background-color: #fe5f37df;
+  border-radius: 10px;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.calender .heading select:focus {
+  outline: none;
+}
+
+.calender .days table {
+  background-color: #ecedefc9;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.calender .days table th,
+.calender .days table td {
+  padding: 5px;
+  border: 0.1px solid rgba(0, 0, 0, 0.089);
+}
+#today {
+  font-weight: bold;
+  background-color: #fe5e37;
+  text-align: center;
+  border-radius: 100%;
+}
+
+.todo-section {
+  width: 100%;
+  height: 60%;
+  background-color: white;
+  padding: 12px 20px;
+  border-radius: 20px;
+}
+.todo-section .heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.todo-section .heading input {
+  background-color: rgba(235, 235, 235, 0.993);
+  width: 90%;
+  font-size: 20px;
+  padding: 0 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+.todo-section .plus {
+  font-size: 30px;
+  cursor: pointer;
 }
 
 .todo {
-  width: 100%;
-  height: 60%;
-  background-color: firebrick;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fe5e37;
+  margin-top: 15çpx;
+  padding: 12px;
+  height: 40px;
+  border-radius: 10px;
 }
-
-a {
-  text-decoration: none;
+.todo .checkbox {
+  min-width: 25px;
+  min-height: 25px;
+}
+.todo img {
+  max-height: 20px;
+  max-width: 20px;
+}
+.todo p {
+  font-weight: bold;
+  padding-left: 5px;
+  width: 100%;
 }
