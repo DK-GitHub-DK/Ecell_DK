@@ -297,7 +297,7 @@ a {
   align-items: center;
   justify-content: space-between;
   background-color: #fe5e37;
-  margin-top: 15çpx;
+  margin-top: 15px;
   padding: 12px;
   height: 40px;
   border-radius: 10px;
@@ -314,4 +314,43 @@ a {
   font-weight: bold;
   padding-left: 5px;
   width: 100%;
+}
+
+@media only screen and (max-width: 1401px) {
+  .navbar {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1289px) {
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .card-slider {
+    width: 100%;
+    padding-left: 0px;
+  }
+  .card .bank-details p {
+    font-size: 20px;
+  }
+  .card .money-details p {
+    font-size: 15px;
+  }
+  .header .icons {
+    width: 55%;
+  }
+  .calender-todo {
+    margin-top: 20px;
+  }
+  .calender .heading p {
+    font-size: 14px;
+  }
+  .calender .heading select {
+    font-size: 14px;
+    padding: 0px;
+  }
+  .calender .days table {
+    font-size: 8px;
+  }
 }
